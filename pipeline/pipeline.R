@@ -21,5 +21,5 @@ library(wearitR)
 config_file = "config.json"
 data_path = "data"
 study_config = read_studyconfig(config_file)
-run_pipeline_survey(data_path, config_file, use_labels = T) # old data
-run_pipeline_cogdata(data_path, config_file) # old data
+run_pipeline_survey(data_path, config_file, use_labels = T)
+run_pipeline_cogdata(data_path, config_file)

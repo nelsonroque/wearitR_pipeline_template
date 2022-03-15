@@ -18,4 +18,8 @@ library(wearitR)
 
 # `data_path` = directory relative to the RProj (in this case, `data`)
 # `config_path` = file path to JSON configuration file (in this case, `config.json`)
-run_pipeline(data_path = "data", config_path = "config.json", use_labels=T)
+config_file = "config.json"
+data_path = "data"
+study_config = read_studyconfig(config_file)
+run_pipeline_survey(data_path, config_file, use_labels = T) # old data
+run_pipeline_cogdata(data_path, config_file) # old data

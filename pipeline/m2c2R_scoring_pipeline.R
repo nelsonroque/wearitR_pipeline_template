@@ -3,7 +3,7 @@ library(m2c2R)
 lsf.str("package:m2c2R")
 
 # score and summarise data 
-files_in_zip <- list.files('data/')
+files_in_zip <- list.files('output/')
 files_in_zip
 
 # ==============================================================================
@@ -11,10 +11,10 @@ files_in_zip
 # STEP 4) READ ALL FILES ----- 
 
 # get filename that matches pattern for each task filename ('Symbol-Search') -----
-fn_cogtask_dotmemory <- files_in_zip[grepl("dotmemory_", files_in_zip)]
-fn_cogtask_symbolsearch <- files_in_zip[grepl("symbolsearch_", files_in_zip)]
-fn_cogtask_shoppinglist <- files_in_zip[grepl("shoppinglist_", files_in_zip)]
-fn_cogtask_stroop <- files_in_zip[grepl("stroop_", files_in_zip)]
+fn_cogtask_dotmemory <- paste0("output/",files_in_zip[grepl("dotmemory_", files_in_zip)])
+fn_cogtask_symbolsearch <- paste0("output/",files_in_zip[grepl("symbolsearch_", files_in_zip)])
+fn_cogtask_shoppinglist <- paste0("output/",files_in_zip[grepl("shoppinglist_", files_in_zip)])
+fn_cogtask_stroop <- paste0("output/",files_in_zip[grepl("stroop_", files_in_zip)])
 
 # ==============================================================================
 

@@ -23,3 +23,8 @@ data_path = "data"
 study_config = read_studyconfig(config_file)
 run_pipeline_survey(data_path, config_file, use_labels = T, drop_deprecated = T)
 run_pipeline_cogdata(data_path, config_file)
+
+
+# run the scoring script for any cognitive assessment
+# NOTE: need to edit `m2c2R_scoring_pipeline.R` for the specific cog tasks in the protocol
+#source("m2c2R_scoring_pipeline.R")
